@@ -24,8 +24,15 @@ public class Business {
     public void shipmentGoods() {
         Absolute absolute = ctx.getBean(Absolute.class);
         Aist aist = ctx.getBean(Aist.class);
-        absolute.importGood(stock, 3);
-        aist.importGood(stock, 3);
+        Worker mishka = stock.getMishka();
+        Worker zelya = stock.getZelya();
+
+        Map<String, List<Good>> shipments = new HashMap<>();
+
+        shipments.putAll(mishka.getGoods(absolute.importGood(3)));
+        shipments.putAll(zelya.getGoods(aist.importGood(3)));
+
+        stock.setGoods(shipments);
     }
 
     public void brokeGoods() {

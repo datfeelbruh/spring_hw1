@@ -3,8 +3,6 @@ package org.example;
 import org.example.config.StockConfig;
 import org.example.customers.Petrovich;
 import org.example.customers.Reshar;
-import org.example.goods.Bicycle;
-import org.example.goods.Vodka;
 import org.example.serivce.Stock;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

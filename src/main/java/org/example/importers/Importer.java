@@ -1,7 +1,10 @@
 package org.example.importers;
 
-import org.example.serivce.Stock;
+import org.example.goods.Good;
+
+import java.util.List;
+import java.util.Map;
 
 public interface Importer {
-    void importGood(Stock stock, int count);
+    Map<String, List<Good>> importGood(int count);
 }
