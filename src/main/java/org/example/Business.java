@@ -11,7 +11,6 @@ import org.example.serivce.Worker;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Business {
     AnnotationConfigApplicationContext ctx;
